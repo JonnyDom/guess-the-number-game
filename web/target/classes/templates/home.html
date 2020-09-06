@@ -10,7 +10,10 @@
         <h1>Welcome to the Number game</h1>
         <!-- the tag th:text replaces the anchor text content ("Click to play")
         and the tag th:href replaces the original href in the 'a' tag -->
-        <a th:href="play" th:text="Play" >Click to Play</a>
+        <a th:href="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"
+           th:text="Play" >
+            Click to Play
+        </a>
     </div>
 </body>
 </html>
