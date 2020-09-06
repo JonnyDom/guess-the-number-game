@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+<!-- the tag 'th' will now reference the tags from Thymeleaf's namespaces -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Guess the Number Game</title>
 </head>
 <body>
-    <h1>Welcome to the Number game</h1>
-    <a th:text="Play" href="http://www.google.com">Click to Play</a>
+    <div align="center">
+        <h1>Welcome to the Number game</h1>
+        <!-- the tag th:text replaces the anchor text content ("Click to play")
+        and the tag th:href replaces the original href in the 'a' tag -->
+        <a th:href="play" th:text="Play" >Click to Play</a>
+    </div>
 </body>
 </html>

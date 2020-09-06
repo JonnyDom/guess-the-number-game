@@ -1,10 +1,12 @@
 com\jpdomingues\NumberGeneratorImpl.class
 com\jpdomingues\MaxNumber.class
-com\jpdomingues\GameImpl.class
 com\jpdomingues\MinNumber.class
+com\jpdomingues\config\GameConfig.class
+com\jpdomingues\GameServiceImpl.class
+com\jpdomingues\NumberGenerator.class
+com\jpdomingues\GameImpl.class
 com\jpdomingues\MessageGeneratorImpl.class
 com\jpdomingues\GuessCount.class
 com\jpdomingues\Game.class
-com\jpdomingues\config\GameConfig.class
 com\jpdomingues\MessageGenerator.class
-com\jpdomingues\NumberGenerator.class
+com\jpdomingues\GameService.class
