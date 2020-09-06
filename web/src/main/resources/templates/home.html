@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- the tag 'th' will now reference the tags from Thymeleaf's namespaces -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:replace="~{fragments/head :: headFragment}">
     <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+    <title>Title content to be replaced</title>
 </head>
 <body>
     <div align="center">
@@ -12,11 +12,17 @@
             <!-- the tag th:text replaces the anchor text content ("Click to play")
          and the tag th:href replaces the original href in the 'a' tag -->
             <a th:href="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"
-               th:text="Play" >
+               th:text="Play"
+               href="play.html"> <!-- this href's purpose is to be able to
+               make the browser preview mode as flexible as possible.
+                When the application starts up it will be replaced by th:href-->
                 Click to Play
             </a>
         </h3>
 
+        <footer th:replace="~{fragments/footer :: footerFragment}">
+            <p>Created by João Domingues - 2020</p>
+        </footer>
     </div>
 </body>
 </html>

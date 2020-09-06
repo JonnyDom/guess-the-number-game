@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- the tag 'th' will now reference the tags from Thymeleaf's namespaces -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:replace="~{fragments/head :: headFragment}">
     <meta charset="UTF-8">
-    <title>Guess the Number Game</title>
+    <title>Game</title><!-- replaced by the TL fragment -->
 </head>
 <body>
     <div align="center">
@@ -22,8 +22,8 @@
             <input type="submit" value="Submit"/>
         </form>
 
-        <footer>
-            <p>Created by João Domingues</p>
+        <footer th:replace="~{fragments/footer :: footerFragment}">
+            <p>Created by João Domingues - 2020</p>
         </footer>
 
     </div>
