@@ -1,5 +1,8 @@
 package com.jpdomingues.util;
 
+/**
+ * The names of the templates.
+ */
 public class ViewNames {
 
     //== fields ==//
