@@ -1,0 +1,14 @@
+<!-- The logic is decoupled from the html files.
+ So the Thymeleaf tags are defined here only -->
+<thlogic>
+    <attr   sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#main-message"
+          th:text="${__${T(com.jpdomingues.util.AttributeNames).MAIN_MESSAGE}__}"/>
+    <attr sel="#result-message"
+          th:text="${__${T(com.jpdomingues.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#game-form"
+          th:action="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>

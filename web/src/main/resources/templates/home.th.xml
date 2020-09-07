@@ -1,0 +1,11 @@
+<!-- The logic is decoupled from the html files.
+ So the Thymeleaf tags are defined here only -->
+<thlogic>
+    <attr   sel="#headId"
+            th:replace="~{fragments/head :: headFragment}"/>
+    <attr   sel="#play-link"
+            th:href="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"
+            th:text="Play" />
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- the tag 'th' will now reference the tags from Thymeleaf's namespaces -->
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en" >
+<head id="headId">
     <meta charset="UTF-8">
     <title>Game Finished</title><!-- replaced by the TL fragment -->
 </head>
@@ -9,23 +9,23 @@
     <div align="center">
         <h1>Guess the Number game</h1>
         <h2>Game Over</h2>
-        <h3 th:text="${__${T(com.jpdomingues.util.AttributeNames).RESULT_MESSAGE}__}">
+        <h3 id="result-message">
             Result Message Content
         </h3>
 
        <h3>
-           <a th:href="@{__${T(com.jpdomingues.util.GameMappings).RESTART}__}">
+           <a id="restart-link">
                Play Again
            </a>
        </h3>
 
        <h3>
-           <a th:href="@{__${T(com.jpdomingues.util.GameMappings).HOME}__}">
+           <a id="home-link">
                Home
            </a>
        </h3>
 
-        <footer th:replace="~{fragments/footer :: footerFragment}">
+        <footer id="footerId">
             <p>Created by João Domingues - 2020</p>
         </footer>
     </div>

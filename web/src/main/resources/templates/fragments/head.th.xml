@@ -1,0 +1,6 @@
+<!-- The logic is decoupled from the html files.
+ So the Thymeleaf tags are defined here only -->
+<thlogic>
+    <attr sel="#headId"
+          th:fragment="headFragment"/>
+</thlogic>

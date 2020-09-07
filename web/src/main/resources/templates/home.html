@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- the tag 'th' will now reference the tags from Thymeleaf's namespaces -->
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<head id="headId">
     <meta charset="UTF-8">
     <title>Title content to be replaced</title>
 </head>
@@ -11,8 +11,7 @@
         <h3>
             <!-- the tag th:text replaces the anchor text content ("Click to play")
          and the tag th:href replaces the original href in the 'a' tag -->
-            <a th:href="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"
-               th:text="Play"
+            <a id="play-link"
                href="play.html"> <!-- this href's purpose is to be able to
                make the browser preview mode as flexible as possible.
                 When the application starts up it will be replaced by th:href-->
@@ -20,7 +19,7 @@
             </a>
         </h3>
 
-        <footer th:replace="~{fragments/footer :: footerFragment}">
+        <footer id="footerId">
             <p>Created by João Domingues - 2020</p>
         </footer>
     </div>

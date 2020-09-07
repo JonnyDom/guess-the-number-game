@@ -1,3 +1,7 @@
+com\jpdomingues\util\thymeleaf\DecoupledLogicSetup.class
+com\jpdomingues\util\GameMappings.class
 com\jpdomingues\util\ViewNames.class
 com\jpdomingues\WebMain.class
+com\jpdomingues\controller\GameController.class
+com\jpdomingues\util\AttributeNames.class
 com\jpdomingues\config\WebConfig.class
