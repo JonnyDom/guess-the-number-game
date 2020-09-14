@@ -3,9 +3,10 @@
 <thlogic>
     <attr   sel="#headId"
             th:replace="~{fragments/head :: headFragment}"/>
+    <attr   sel="#game-welcome" th:text="#{game.welcome}" />
     <attr   sel="#play-link"
             th:href="@{__${T(com.jpdomingues.util.GameMappings).PLAY}__}"
-            th:text="Play" />
+            th:text="#{game.playLink}" />
     <attr sel="#footerId"
           th:replace="~{fragments/footer :: footerFragment}"/>
 </thlogic>

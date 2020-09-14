@@ -1,3 +1,4 @@
+com\jpdomingues\interceptor\RequestInterceptor.class
 com\jpdomingues\util\thymeleaf\DecoupledLogicSetup.class
 com\jpdomingues\util\GameMappings.class
 com\jpdomingues\util\ViewNames.class
